@@ -1,0 +1,194 @@
+body{
+  position: relative;
+  background-color: #ffffff;
+  font-family: $primaryFont;
+  color: $body-text-color;
+  font-size: 18px;
+  line-height: 1.666;
+  @media #{$mobile} {
+    font-size: 16px;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $secondaryFont;
+  color: $heading-text-color;
+  font-weight: 700;
+  line-height: 1.1; 
+}
+
+h1{
+  font-size: 50px;
+}
+h2{
+  font-size: 31px;
+}
+h3{
+  font-size: 21px;
+}
+h4{
+  font-size: 18px;
+}
+h5{
+  font-size: 14px;
+}
+h6{
+  font-size: 13px;
+}
+p{
+    margin: 0 0 1em 0;
+    color: $body-text-color;
+}
+a, a:hover, a:visited, a:focus {
+  text-decoration: none;
+  color: $heading-text-color;
+}
+blockquote{
+  font-style: italic;
+  margin: 45px 0 36px 35px;
+  p:first-child{
+    position: relative;
+      &:before{
+      content: open-quote;
+      position: absolute;
+      left: -12px;
+      top: -5px;
+    }
+    &:after{
+      content: close-quote;
+      margin-left: 4px;
+    }
+  }
+  p{
+    margin-bottom: 5px;
+  }
+  a{
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: $secondaryFont;
+    border-bottom: 3px solid $secondaryColor;
+    &:hover{
+      background: $primaryColor;
+      color: $lite;
+    }
+  }
+}
+input[type="submit"]{
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 500;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  background-color: #4A90E2;
+  color: #fff;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  text-decoration: none;
+  border-color: #4A90E2;
+}
+.container-fluid{
+  padding: 0 15px;
+}
+.container{
+	max-width: $container-width;
+	margin: 0 auto;
+	padding: 0 15px; 
+}
+.wrapper{
+	max-width: $wrapper-width;
+	margin: 0 auto;
+	padding: 0 68px;
+  @media #{$mobile} {
+    padding: 0 15px;
+  }
+}
+.fix{overflow: hidden;}
+
+.clearfix{
+	clear: both;
+}
+.sidebar-wrapper,
+.content-wrapper {
+  float: left;
+  padding: 0 15px;
+}
+.content-wrapper{
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 68px;
+  @media #{$tab} {
+    padding: 0 15px;
+  }
+  @media #{$mobile} {
+    width: 100%;
+    padding: 0;
+  }
+  
+}
+.sidebar-wrapper{
+  width: 30%;
+  padding: 0 15px;
+  @media #{$mobile} {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.page table,
+.single-post table,
+.comments-area table {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+.page table th,
+.single-post table th,
+.comments-area table th{
+  border-right: 1px solid #eee;
+  padding: 10px 10px;
+}
+.page table tr,
+.page table td,
+.single-post table tr,
+.single-post table td,
+.comments-area table td,
+.comments-area table tr{
+    border-right: 1px solid #eee;
+    padding: 10px 10px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    a{
+      border-bottom: 3px solid $secondaryColor;
+      &:hover{
+        background: $primaryColor;
+        color: $lite;
+      }
+    }
+}
+.site-main{
+  overflow: hidden;
+}
+a.post-edit-link{
+  border-bottom: 2px solid $secondaryColor;
+  &:hover{
+    background: $primaryColor;
+    color: $lite;
+  }
+}
+
+/* admin bar css */
+@media screen and (max-width: 600px){
+  .mobile {
+      position: fixed !important;
+  }
+}

@@ -1,0 +1,767 @@
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+/* ==========================================
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+=============================================*/
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+/* ============== variables ===============*/
+/*==============media query variable ============*/
+/*--------------------------------------------------------------
+# Basic css
+--------------------------------------------------------------*/
+/*=================== basic css directory ======================*/
+body {
+  position: relative;
+  background-color: #ffffff;
+  font-family: "Noto Serif", sans-serif;
+  color: #303030;
+  font-size: 18px;
+  line-height: 1.666; }
+  @media only screen and (max-width: 767px) {
+    body {
+      font-size: 16px; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Libre Franklin", sans-serif;
+  color: #303030;
+  font-weight: 700;
+  line-height: 1.1; }
+
+h1 {
+  font-size: 50px; }
+
+h2 {
+  font-size: 31px; }
+
+h3 {
+  font-size: 21px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 13px; }
+
+p {
+  margin: 0 0 1em 0;
+  color: #303030; }
+
+a, a:hover, a:visited, a:focus {
+  text-decoration: none;
+  color: #303030; }
+
+blockquote {
+  font-style: italic;
+  margin: 45px 0 36px 35px; }
+  blockquote p:first-child {
+    position: relative; }
+    blockquote p:first-child:before {
+      content: open-quote;
+      position: absolute;
+      left: -12px;
+      top: -5px; }
+    blockquote p:first-child:after {
+      content: close-quote;
+      margin-left: 4px; }
+  blockquote p {
+    margin-bottom: 5px; }
+  blockquote a {
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Libre Franklin", sans-serif;
+    border-bottom: 3px solid #cbe4ff; }
+    blockquote a:hover {
+      background: #4A90E2;
+      color: #ffffff; }
+
+input[type="submit"] {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 500;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  background-color: #4A90E2;
+  color: #fff;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  text-decoration: none;
+  border-color: #4A90E2; }
+
+.container-fluid {
+  padding: 0 15px; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.wrapper {
+  max-width: 816px;
+  margin: 0 auto;
+  padding: 0 68px; }
+  @media only screen and (max-width: 767px) {
+    .wrapper {
+      padding: 0 15px; } }
+
+.fix {
+  overflow: hidden; }
+
+.clearfix {
+  clear: both; }
+
+.sidebar-wrapper,
+.content-wrapper {
+  float: left;
+  padding: 0 15px; }
+
+.content-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 68px; }
+  @media only screen and (max-width: 991px) {
+    .content-wrapper {
+      padding: 0 15px; } }
+  @media only screen and (max-width: 767px) {
+    .content-wrapper {
+      width: 100%;
+      padding: 0; } }
+
+.sidebar-wrapper {
+  width: 30%;
+  padding: 0 15px; }
+  @media only screen and (max-width: 767px) {
+    .sidebar-wrapper {
+      width: 100%;
+      padding: 0; } }
+
+.page table,
+.single-post table,
+.comments-area table {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee; }
+
+.page table th,
+.single-post table th,
+.comments-area table th {
+  border-right: 1px solid #eee;
+  padding: 10px 10px; }
+
+.page table tr,
+.page table td,
+.single-post table tr,
+.single-post table td,
+.comments-area table td,
+.comments-area table tr {
+  border-right: 1px solid #eee;
+  padding: 10px 10px;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee; }
+  .page table tr a,
+  .page table td a,
+  .single-post table tr a,
+  .single-post table td a,
+  .comments-area table td a,
+  .comments-area table tr a {
+    border-bottom: 3px solid #cbe4ff; }
+    .page table tr a:hover,
+    .page table td a:hover,
+    .single-post table tr a:hover,
+    .single-post table td a:hover,
+    .comments-area table td a:hover,
+    .comments-area table tr a:hover {
+      background: #4A90E2;
+      color: #ffffff; }
+
+.site-main {
+  overflow: hidden; }
+
+a.post-edit-link {
+  border-bottom: 2px solid #cbe4ff; }
+  a.post-edit-link:hover {
+    background: #4A90E2;
+    color: #ffffff; }
+
+/* admin bar css */
+@media screen and (max-width: 600px) {
+  .mobile {
+    position: fixed !important; } }
+
+/*--------------------------------------------------------------
+# Modular css
+--------------------------------------------------------------*/
+/*================= modular section related css  =====================*/
+.site-header-bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 50px; }
+  .site-header-bg h3.site-description,
+  .site-header-bg h2.site-title a {
+    color: #ffffff; }
+
+.header-container {
+  padding: 68px 68px 100px; }
+  @media only screen and (max-width: 991px) {
+    .header-container {
+      padding: 68px 15px 100px; } }
+  @media only screen and (max-width: 767px) {
+    .header-container {
+      padding: 68px 15px 0; } }
+
+/*================ main nav css =================*/
+.site-title a {
+  border: none; }
+  .site-title a:hover {
+    background-color: transparent; }
+
+.site-header h2.site-title,
+.site-header h2.site-title a {
+  display: inline-block;
+  margin: 0;
+  color: #303030; }
+
+.site-header h3.site-description {
+  margin: 10px 42px 0;
+  color: #303030; }
+
+.logo {
+  float: left; }
+  .logo a {
+    border: none; }
+    .logo a:hover {
+      background-color: transparent;
+      color: #303030; }
+  .logo img {
+    height: 32px;
+    width: 32px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: left;
+    object-position: left; }
+
+.menu_button {
+  margin-right: 10px;
+  height: 32px;
+  width: 32px;
+  float: left;
+  padding: 3px;
+  border: 2px solid #cbe4ff;
+  cursor: pointer; }
+
+.main_menu {
+  background: #4A90E2;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  z-index: 9999;
+  overflow: scroll; }
+  .main_menu .close_button {
+    line-height: 56px;
+    position: absolute;
+    display: inline-block;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 60px;
+    cursor: pointer; }
+  .main_menu .menu {
+    margin: 150px 0 100px 12%;
+    list-style: none;
+    padding: 0; }
+    .main_menu .menu ul {
+      list-style: none; }
+    .main_menu .menu li a {
+      font-family: "Libre Franklin", sans-serif;
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 1.6;
+      color: #fff;
+      text-decoration: none;
+      border: none; }
+      .main_menu .menu li a:hover {
+        color: #303030;
+        background-color: transparent; }
+      @media only screen and (max-width: 767px) {
+        .main_menu .menu li a {
+          font-size: 31px; } }
+
+/*================= comment css =================*/
+.comments-area {
+  padding-top: 20px;
+  border-top: 1px solid #eee; }
+  .comments-area ol {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .comments-area ol .comment-author.vcard {
+      position: relative;
+      padding-left: 50px; }
+    .comments-area ol .comment-author.vcard img {
+      position: absolute;
+      left: 0;
+      top: 10px; }
+    .comments-area ol .comment-metadata {
+      margin-left: 50px;
+      font-size: 12px; }
+      .comments-area ol .comment-metadata a {
+        border-bottom: none; }
+    .comments-area ol li.comment {
+      margin-bottom: 30px; }
+    .comments-area ol li.comment:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0; }
+    .comments-area ol .comment-content p {
+      margin: 10px 0 0px; }
+    .comments-area ol p.comment-awaiting-moderation {
+      color: #D30015; }
+    .comments-area ol b.fn {
+      font-size: 14px;
+      text-transform: capitalize; }
+      .comments-area ol b.fn a {
+        border-bottom: none; }
+    .comments-area ol a.comment-reply-link {
+      font-weight: 700;
+      border-bottom: none;
+      font-size: 16px; }
+    .comments-area ol .children {
+      padding-left: 30px; }
+    @media (max-width: 320px) {
+      .comments-area ol .children {
+        padding-left: 15px; } }
+    .comments-area ol li ol.children {
+      margin-top: 30px; }
+
+.comment-form input {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px; }
+
+.comment-form textarea {
+  margin-top: 10px; }
+
+.comment-form input[type=submit] {
+  height: auto;
+  display: inline-block;
+  padding: 13px 20px;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 500;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  background-color: #4A90E2;
+  color: #fff;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  border: none;
+  border-radius: 5px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  text-decoration: none;
+  position: relative;
+  top: -1px;
+  margin-right: 1em;
+  width: auto !important; }
+
+/*================= widget css ====================*/
+.widget h3.widget-title {
+  margin-top: 0;
+  margin-bottom: 25px; }
+
+.blog-sidebar {
+  margin-top: 18px; }
+  .blog-sidebar .widget {
+    margin-bottom: 50px; }
+    .blog-sidebar .widget a {
+      border: none; }
+    .blog-sidebar .widget td a {
+      border-bottom: 2px solid #cbe4ff; }
+
+@media (max-width: 767px) {
+  .blog-sidebar {
+    margin-top: 30px; } }
+
+.widget ul {
+  margin: -10px 0 0;
+  padding: 0;
+  list-style: none; }
+
+.widget ul li a {
+  text-transform: capitalize;
+  font-size: 16px; }
+  .widget ul li a:hover {
+    border-bottom: 3px solid #cbe4ff;
+    background: transparent;
+    color: #303030; }
+
+.widget ul li a:hover {
+  text-decoration: none; }
+
+.widget label {
+  display: block; }
+
+.widget.widget_recent_entries ul li,
+.widget.widget_recent_comments ul li {
+  line-height: 1.3;
+  margin-bottom: 8px; }
+
+span.post-date {
+  font-size: 12px;
+  display: block;
+  color: #8F8F8F;
+  margin-top: 3px; }
+
+.widget.widget_archive select,
+.widget.widget_categories select,
+.widget.widget_text select {
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid #eee;
+  height: 40px;
+  display: block; }
+
+.widget.widget_text form > br {
+  display: none; }
+
+.widget table {
+  max-width: 100%;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee; }
+
+.widget table > caption {
+  font-weight: 700;
+  padding-top: 0;
+  margin-bottom: 10px; }
+
+.widget td#today,
+.widget td#prev {
+  font-weight: 700;
+  font-size: 14px; }
+
+.widget table th {
+  border-right: 1px solid #eee;
+  text-align: center;
+  padding: 0; }
+
+.widget table tr,
+.widget table td {
+  padding: 0;
+  border-right: 1px solid #eee;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee; }
+
+.widget.widget_rss ul li {
+  margin-bottom: 10px; }
+
+.widget .rssSummary {
+  padding-top: 5px; }
+
+.widget cite {
+  font-weight: 700; }
+
+.widget .tagcloud a {
+  display: inline-block;
+  border-bottom: 2px solid #cbe4ff;
+  margin-right: 5px; }
+
+.search-form {
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+  overflow: hidden; }
+  .search-form:focus {
+    outline: none; }
+  .search-form input {
+    height: 40px;
+    padding: 0 5px; }
+  .search-form label {
+    width: calc(100% - 65px);
+    float: left; }
+    .search-form label input {
+      border-radius: 3px 0 0 3px;
+      border-right: none;
+      width: 100%; }
+  .search-form .search-submit {
+    width: 65px;
+    float: left;
+    border-radius: 0 3px 3px 0;
+    margin-left: -5px;
+    text-align: center;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 500;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    background-color: #4A90E2;
+    color: #fff;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    text-decoration: none;
+    border-color: #4A90E2; }
+    .search-form .search-submit:hover {
+      border-color: #4A90E2; }
+
+.widget.widget_nav_menu ul li ul.sub-menu,
+.widget.widget_pages ul li ul.children {
+  padding-left: 10px; }
+
+.widget.widget_nav_menu ul {
+  margin: 0; }
+  .widget.widget_nav_menu ul li a:hover {
+    border-bottom: 3px solid #cbe4ff;
+    background: none;
+    color: #303030; }
+
+.widget ul.children {
+  margin: 0;
+  padding-left: 10px; }
+
+.dropdown-submenu {
+  position: relative; }
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px 6px;
+  border-radius: 0 6px 6px 6px; }
+
+.textwidget .wp-caption a:hover {
+  background: transparent; }
+
+/*=================== footer css =======================*/
+footer.site-footer {
+  padding: 70px 68px 50px;
+  font-size: 14px; }
+  @media only screen and (max-width: 991px) {
+    footer.site-footer {
+      padding: 70px 15px 50px; } }
+  @media only screen and (max-width: 767px) {
+    footer.site-footer {
+      padding: 0 15px 50px; } }
+  footer.site-footer a {
+    border: none; }
+    footer.site-footer a:hover {
+      border-bottom: 3px solid #cbe4ff; }
+
+/*============== page css start =================*/
+/*================= blog home css start here ==================*/
+.site-main .simpli-blog .post-thubnail {
+  margin: 20px 0; }
+
+.site-main .simpli-blog .sticky .entry-header h3.entry-title a {
+  border-bottom: 3px solid #eee;
+  color: #4A90E2; }
+
+.site-main .simpli-blog .entry-header h3.entry-title {
+  margin: 0; }
+  .site-main .simpli-blog .entry-header h3.entry-title a {
+    font-size: 18px;
+    border-bottom: 3px solid #cbe4ff;
+    line-height: 1.8; }
+    .site-main .simpli-blog .entry-header h3.entry-title a:hover {
+      background: #4A90E2;
+      color: #ffffff; }
+
+.site-main .simpli-blog .page-header h1.page-title {
+  margin-top: 0; }
+
+.site-main .simpli-blog .posts-navigation {
+  margin: 30px 0; }
+  .site-main .simpli-blog .posts-navigation a {
+    font-size: 16px;
+    border-bottom: 3px solid #cbe4ff; }
+    .site-main .simpli-blog .posts-navigation a:hover {
+      background: #4A90E2;
+      color: #ffffff; }
+
+.site-main .post-content {
+  margin-bottom: 30px; }
+
+/*================== simple single post css ====================*/
+.single-post .post-thubnail {
+  margin: 20px 0; }
+
+.single-post p iframe {
+  margin-top: 10px; }
+
+.single-post .entry-title {
+  font-weight: 900;
+  margin: 0 0 10px;
+  line-height: 70px; }
+  @media only screen and (max-width: 767px) {
+    .single-post .entry-title {
+      font-size: 31px;
+      line-height: 50px; } }
+
+.single-post .post {
+  margin-bottom: 30px; }
+  .single-post .post h2, .single-post .post h3, .single-post .post h4, .single-post .post h5, .single-post .post h6 {
+    margin: 30px 0; }
+  .single-post .post .post-content .simpli-video {
+    width: 100%;
+    position: relative;
+    padding: 52.6% 0 0;
+    margin: 40px 0; }
+    .single-post .post .post-content .simpli-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
+.single-post .page-links a {
+  border-bottom: 3px solid #cbe4ff; }
+  .single-post .page-links a:hover {
+    color: #4A90E2;
+    border-bottom: 0; }
+
+.posted-on a, .posted-by a {
+  border: none;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #8F8F8F;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 10px;
+  display: block; }
+  .posted-on a:hover, .posted-by a:hover {
+    background-color: transparent;
+    color: #303030; }
+
+.posted-by {
+  margin-bottom: 30px;
+  font-family: "Libre Franklin", sans-serif; }
+  .posted-by a {
+    display: inline; }
+
+.entry-footer {
+  font-weight: 900; }
+  .entry-footer a {
+    font-weight: 400; }
+  .entry-footer .cat-links {
+    padding-right: 30px;
+    display: block;
+    float: left;
+    width: 49.99%; }
+    .entry-footer .cat-links a {
+      border-bottom: 3px solid #cbe4ff; }
+      .entry-footer .cat-links a:hover {
+        background: #4A90E2;
+        color: #ffffff; }
+  .entry-footer .tags-links {
+    width: 49.99%;
+    display: block;
+    float: left;
+    text-align: right; }
+    .entry-footer .tags-links a {
+      border-bottom: 3px solid #cbe4ff; }
+      .entry-footer .tags-links a:hover {
+        background: #4A90E2;
+        color: #ffffff; }
+
+.site-main .navigation.post-navigation {
+  margin: 30px 0 50px; }
+  .site-main .navigation.post-navigation a {
+    border-bottom: 3px solid #cbe4ff; }
+    .site-main .navigation.post-navigation a:hover {
+      background: #4A90E2;
+      color: #ffffff; }
+
+/*==================== normal single post ======================*/
+.site-main .simpli-blog .normal-post {
+  margin-bottom: 50px; }
+  .site-main .simpli-blog .normal-post h3.entry-title a {
+    font-size: 41px;
+    border-bottom: none; }
+    @media only screen and (max-width: 767px) {
+      .site-main .simpli-blog .normal-post h3.entry-title a {
+        font-size: 21px; } }
+  .site-main .simpli-blog .normal-post ul.post-meta {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .site-main .simpli-blog .normal-post ul.post-meta li {
+      display: inline-block;
+      margin-right: 10px; }
+      .site-main .simpli-blog .normal-post ul.post-meta li a, .site-main .simpli-blog .normal-post ul.post-meta li span {
+        border: none;
+        font-family: "Libre Franklin", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: #8F8F8F;
+        letter-spacing: 0;
+        line-height: 22px; }
+        .site-main .simpli-blog .normal-post ul.post-meta li a:hover, .site-main .simpli-blog .normal-post ul.post-meta li span:hover {
+          color: #303030; }
+        @media only screen and (max-width: 767px) {
+          .site-main .simpli-blog .normal-post ul.post-meta li a, .site-main .simpli-blog .normal-post ul.post-meta li span {
+            margin-bottom: 0; } }
+  .site-main .simpli-blog .normal-post .entry-summary {
+    margin-top: 10px; }
+  .site-main .simpli-blog .normal-post .entry-footer a {
+    border-bottom: 3px solid #cbe4ff; }
+    .site-main .simpli-blog .normal-post .entry-footer a:hover {
+      background: #4A90E2;
+      color: #ffffff; }
+
+/*=============== search page css ================*/
+.search .page-title {
+  margin-top: 0; }
+
+.search .entry-title {
+  margin: 0 0 20px; }
+  .search .entry-title a:hover {
+    background: #4A90E2;
+    color: #ffffff; }
+
+.search .post, .search .page {
+  margin-bottom: 50px; }
+
+/*=============== page css ==================*/
+.page .entry-content {
+  padding-bottom: 40px; }
+  .page .entry-content p img {
+    margin-top: 30px; }
+
+.page .entry-footer {
+  padding-bottom: 30px; }

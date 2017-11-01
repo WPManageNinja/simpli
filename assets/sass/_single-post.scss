@@ -1,0 +1,172 @@
+/*================== simple single post css ====================*/
+.single-post{
+	.post-thubnail {
+	    margin: 20px 0;
+	}
+	p iframe{
+		margin-top: 10px;
+	}
+	.entry-title{
+		font-weight: 900;
+		margin: 0 0 10px;
+		line-height: 70px;
+		@media #{$mobile} {
+		  font-size: 31px;
+	      line-height: 50px;
+		}
+	}
+	.post{
+		h2, h3, h4, h5, h6{
+			margin: 30px 0;
+		}
+		margin-bottom: 30px;
+		.post-content{
+			.simpli-video{
+				width: 100%;
+				position: relative;
+				padding: 52.6% 0 0;
+				margin: 40px 0;
+				iframe{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+	.page-links{
+		a{
+			border-bottom: 3px solid $secondaryColor;
+			&:hover{
+			  color: $primaryColor;
+			  border-bottom: 0;
+			}
+		}
+	}
+}
+
+.posted-on{
+	a{
+		border: none;
+		font-family: $secondaryFont;
+		font-weight: 700;
+		font-size: 14px;
+		color: #8F8F8F;
+		letter-spacing: 0;
+		line-height: 22px;
+		margin-bottom: 10px;
+		display: block;
+		&:hover{
+			background-color: transparent;
+			color: $body-text-color;
+		}
+	}
+}
+.posted-by{
+	margin-bottom: 30px;
+	font-family: $secondaryFont;
+	@extend .posted-on;
+	a{
+		display: inline;
+	}
+}
+.entry-footer{
+	font-weight: 900;
+	a{
+		font-weight: 400;
+	}
+	.cat-links{
+		padding-right: 30px;
+		display: block;
+		float: left;
+		width: 49.99%;
+		a{
+			border-bottom: 3px solid $secondaryColor;
+			&:hover{
+			  background: $primaryColor;
+			  color: $lite;
+			}
+		}
+	}
+	.tags-links{
+		width: 49.99%;
+		display: block;
+		float: left;
+		text-align: right;
+		a{
+			border-bottom: 3px solid $secondaryColor;
+			&:hover{
+			  background: $primaryColor;
+			  color: $lite;
+			}
+		}
+	}
+}
+.site-main .navigation.post-navigation{
+	margin: 30px 0 50px;
+	a{
+		border-bottom: 3px solid $secondaryColor;
+		&:hover{
+		  background: $primaryColor;
+		  color: $lite;
+		}
+	}
+}
+
+
+
+/*==================== normal single post ======================*/
+.site-main{
+	.simpli-blog{
+		.normal-post{
+			margin-bottom: 50px;
+			h3.entry-title{
+				a{
+					font-size: 41px;
+					border-bottom: none;
+					@media #{$mobile} {
+						font-size: 21px;
+					}
+				}
+			}
+			ul.post-meta{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li{
+					display: inline-block;
+					margin-right: 10px;
+					a, span{
+						border: none;
+					    font-family: $secondaryFont;
+					    font-weight: 700;
+					    font-size: 14px;
+					    color: #8F8F8F;
+					    letter-spacing: 0;
+					    line-height: 22px;
+					    &:hover{
+					    	color: $body-text-color;
+					    }
+					    @media #{$mobile} {
+						    margin-bottom: 0;
+					    }
+					}
+				}
+			}
+			.entry-summary{
+				margin-top: 10px;
+			}
+			.entry-footer{
+				a{
+					border-bottom: 3px solid $secondaryColor;
+					&:hover{
+					  background: $primaryColor;
+					  color: $lite;
+					}
+				}
+			}
+		}
+	}
+} 

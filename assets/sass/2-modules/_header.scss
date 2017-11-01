@@ -1,0 +1,20 @@
+.site-header-bg{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 50px;
+	h3.site-description,
+	h2.site-title a{
+		color: $lite;
+	}
+}
+
+.header-container{
+    padding: 68px 68px 100px;
+    @media #{$tab} {
+      padding: 68px 15px 100px;
+    }
+    @media #{$mobile} {
+      padding: 68px 15px 0;
+    }
+}

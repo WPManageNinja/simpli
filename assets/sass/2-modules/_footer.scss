@@ -1,0 +1,17 @@
+/*=================== footer css =======================*/
+footer.site-footer {
+    padding: 70px 68px 50px;
+    font-size: 14px;
+    @media #{$tab} {
+      padding: 70px 15px 50px;
+    }
+    @media #{$mobile} {
+      padding: 0 15px 50px;
+    }
+    a{
+		border: none;
+		&:hover{
+			border-bottom: 3px solid #cbe4ff;
+		}
+	}
+}

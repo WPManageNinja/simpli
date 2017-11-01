@@ -1,0 +1,51 @@
+/*================= blog home css start here ==================*/
+.site-main{
+	.simpli-blog{
+		.post-thubnail {
+		    margin: 20px 0;
+		}
+		.sticky{
+			.entry-header{
+				h3.entry-title{
+					a{
+						border-bottom: 3px solid #eee;
+						color: $primaryColor;
+					}
+				}
+			}
+		}
+		.entry-header{
+			h3.entry-title{
+				margin: 0;
+				a{
+					font-size: 18px;
+					border-bottom: 3px solid $secondaryColor;
+					line-height: 1.8;
+					&:hover{
+						background: $primaryColor;
+						color: $lite;
+					}
+				}
+			}
+		}
+		.page-header{
+			h1.page-title{
+				margin-top: 0;
+			}
+		}
+		.posts-navigation{
+			margin: 30px 0;
+			a{
+				font-size: 16px;
+				border-bottom: 3px solid $secondaryColor;
+				&:hover{
+					background: $primaryColor;
+           			color: $lite;
+				}
+			}
+		}
+	}
+	.post-content{
+		margin-bottom: 30px;
+	}
+}
